@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App02_Xamarin.Pages.Perfil1">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Spacing="0">
+            <RelativeLayout VerticalOptions="Start" HeightRequest="300">
+                <Image Source="correioslogo.png" Aspect="AspectFill"
+                       RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"></Image>
+                <Image Source="pLAY.png" WidthRequest="120" x:Name="Perfil"
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-60}"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.2, Constant=-60}"></Image>
+                <Label Text="Miguel de Icaza"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView,ElementName=Perfil, Property=X, Factor=1}"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,ElementName=Perfil, Property=Y, Factor=1,Constant=180}">
+                </Label>
+            
+
+            </RelativeLayout>
+            <Grid BackgroundColor="#0D1F2D" HeightRequest="120">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Label Text="18" TextColor="White" FontSize="32" ></Label>
+                    <Label Text="Anos"  TextColor="White" FontSize="32" HorizontalTextAlignment="Center"></Label>
+                </StackLayout>
+                <StackLayout  Grid.Column="1" Grid.Row="0"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Label Text="10/08/1983" TextColor="White" FontSize="32"></Label>
+                    <Label Text="Nasceu"  TextColor="White" FontSize="32" HorizontalTextAlignment="Center"></Label>
+                </StackLayout>
+ 
+            </Grid>
+
+            <StackLayout Grid.Column="0" Grid.Row="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="30" BackgroundColor="White">
+                <Label Text="Processador Intel® Core™ i3 - \n 6ª geração Windows 10 Home \n Memória de 4GB Disco rígido de 1TB \n Tela 15,6 LED HD Notebook com tela de 15 e teclado alfanumérico para maior produtividade. Com leitor e gravador de CD/DVD." ></Label>
+            </StackLayout>
+
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

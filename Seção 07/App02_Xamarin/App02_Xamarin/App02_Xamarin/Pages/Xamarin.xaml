@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App02_Xamarin.Pages.Xamarin">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0">
+            <StackLayout BackgroundColor="#FFC926" Padding="30">
+                <Image Source="Xamarin.png" HorizontalOptions="Center" VerticalOptions="Center"></Image>
+            </StackLayout>
+              <StackLayout HeightRequest="100" BackgroundColor="#0D1F2D" Padding="30">
+                <Label Text="Xamarin" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" FontSize="48"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="30">
+                <RelativeLayout HorizontalOptions="FillAndExpand">
+                    <BoxView x:Name="boxOne" BackgroundColor="#01DF2D" WidthRequest="30" HeightRequest="30"></BoxView>
+                    <BoxView x:Name="boxTwo" 
+                             RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView,ElementName=boxOne,Property=X,Factor=1,Constant=12}"
+                             RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,ElementName=boxOne,Property=Y,Factor=1,Constant=12}"
+                             BackgroundColor="#25567E" WidthRequest="30" HeightRequest="30"></BoxView>
+                    <BoxView  
+                             RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView,ElementName=boxTwo,Property=X,Factor=1,Constant=12}"
+                             RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,ElementName=boxTwo,Property=Y,Factor=1,Constant=12}"
+                             BackgroundColor="#4E93CB" WidthRequest="30" HeightRequest="30"></BoxView>
+                
+                </RelativeLayout>
+                 <Label Text="Empresa" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="Black" FontSize="48"></Label>
+
+                <StackLayout Padding="30">
+                    <Label Text="=o que estarei indisponível durante todo o dia de hoje.
+                        Durante esse período o Victor Falcão (071 9 9901-6180) estará me apoiando frente as demandas. 
+                        Peço que interajam ligando para o mesmo e não somente por WhatsApp.">
+                    </Label>
+                </StackLayout> 
+
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>
