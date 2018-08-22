@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App01_ControleXF.Controles.TimePikerPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <TimePicker x:Name="TPicker"
+                TextColor="Blue"
+                Format="hh:MM:ss"
+                ></TimePicker>
+            <Label x:Name="lblResultado"></Label>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

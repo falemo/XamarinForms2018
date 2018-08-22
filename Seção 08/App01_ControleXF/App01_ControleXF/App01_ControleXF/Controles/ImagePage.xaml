@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App01_ControleXF.Controles.ImagePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image 
+                Source="https://files.incrivel.club/files/news/part_27/279360/9197010-fedex-logo-650-a542d8629a-1500638940.jpg"
+                Aspect="Fill"
+                IsOpaque="True"
+                x:Name="ImageOne"
+                VerticalOptions="FillAndExpand"
+                ></Image>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

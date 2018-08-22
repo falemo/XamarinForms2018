@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:page="clr-namespace:App01_ControleXF"
+                  x:Class="App01_ControleXF.Menu.Master">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <ScrollView>
+            <StackLayout>
+                <Button Text="Activity Indicator" Clicked="GoActividetyIndicatorPage"></Button>
+                <Button Text="Progress Bar Page" Clicked="GoProgressBarPage"></Button>
+                <Button Text="Box View Page" Clicked="GoBoxViewPage"></Button>
+                <Button Text="Label Page" Clicked="GoLabelPage"></Button>
+                <Button Text="Button Page" Clicked="GoButtonPage"></Button>
+                <Button Text="Entry/Editor" Clicked="GoEntryEditorPage"></Button>
+                <Button Text="DatePiker" Clicked="GoDatePikerPage"></Button>
+                <Button Text="TimePiker" Clicked="GoTimePikerPage"></Button>
+                <Button Text="Picker" Clicked="GoPikerPage"></Button>
+                <Button Text="Search Bar" Clicked="GoSearchBarPage"></Button>
+                <Button Text="Slider\Stepper" Clicked="GoSliderStepperPage"></Button>
+                <Button Text="Swicth" Clicked="GoSwicthPage"></Button>
+                <Button Text="Image" Clicked="GoImagePage"></Button>
+                <Button Text="ListView" Clicked="GoListViewPage"></Button>
+                <Button Text="TableView" Clicked="GoTableViewPage"></Button>
+                <Button Text="WebView" Clicked="GoWebViewPage"></Button>
+                
+            </StackLayout>
+            </ScrollView>
+        </ContentPage>
+        
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <page:MainPage></page:MainPage>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

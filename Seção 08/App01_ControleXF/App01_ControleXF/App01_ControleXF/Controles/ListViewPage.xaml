@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mod="clr-namespace:App01_ControleXF.Modelo"
+             x:Class="App01_ControleXF.Controles.ListViewPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView>
+                <ListView.ItemsSource>
+                <x:Array Type="{x:Type mod:Pessoa}">
+                    <mod:Pessoa Nome="João Rodrigues" Idade="18"></mod:Pessoa>
+                    <mod:Pessoa Nome="MAria Rodrigues" Idade="31"></mod:Pessoa>
+                    <mod:Pessoa Nome="Felipe Rodrigues" Idade="24"></mod:Pessoa>
+                    <mod:Pessoa Nome="Pedro Rodrigues" Idade="10"></mod:Pessoa>
+                    <mod:Pessoa Nome="Mariana Rodrigues" Idade="45"></mod:Pessoa>
+                    <mod:Pessoa Nome="Erica Rodrigues" Idade="62"></mod:Pessoa>
+                </x:Array>
+                 </ListView.ItemsSource>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Nome}"></Label>
+                                <Label Text=" - "></Label>
+                                <Label Text="{Binding Idade}"></Label>
+                               </StackLayout>
+                        </ViewCell>
+                        
+                    </DataTemplate>
+                    
+                </ListView.ItemTemplate>
+                </ListView>
+
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="Black"></BoxView>
+            <ListView x:Name="ListaPessoa">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Nome}"></Label>
+                                    <Label Text=" - "></Label>
+                                    <Label Text="{Binding Idade}"></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

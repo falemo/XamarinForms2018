@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App01_ControleXF.Controles.PickerPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker Title="Empresas de TI"
+                    TextColor="Blue"
+                    SelectedIndex="2"
+                    SelectedIndexChanged="ActionMudarIndex"
+                    >
+                <Picker.Items>
+                    <x:String>Apple</x:String>
+                    <x:String>Microsoft</x:String>
+                    <x:String>Oracle</x:String>
+                    <x:String>CA</x:String>
+                    <x:String>Embarcadeiro</x:String>
+                </Picker.Items>    
+                                
+            </Picker>
+            <!-- Duas Formas de traalhar propriedades.
+            <Picker BackgroundColor="Red"></Picker>
+            <Picker>
+                <Picker.BackgroundColor> red </Picker.BackgroundColor>
+            </Picker>
+            -->
+            <Label x:Name="Resultado"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
