@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2_Cinemix"
+             x:Class="App2_Cinemix.MainPage">
+    
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <StackLayout Style="{StaticResource Cabecalho}">
+                <Label Text="CINEMIX" Style="{StaticResource TituloApp}"></Label>
+                <Label Text="seu app de cinema" Style="{StaticResource SubTituloApp}"></Label>
+            </StackLayout>
+            <StackLayout Style="{StaticResource Conteudo}">
+                <Label Text="Lançamento" Style="{StaticResource SubTituloApp}"></Label>
+                <Label Text="Pantera Negra" Style="{StaticResource TituloFilme}"></Label>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  Width="*"></ColumnDefinition>
+                        <ColumnDefinition  Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Image Source="Fundo.jpg" Aspect="AspectFill" Grid.ColumnSpan="2" VerticalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"></Image>
+                    <Image Source="Cinema.PNG" Margin="0,20,0,0" Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Start"></Image>
+
+                        <Label  Grid.ColumnSpan="2" Text="Décadas após a queda de Darth Vader e do Império, surge uma nova ameaça: a Primeira Ordem, uma organização sombria que busca minar o poder da República e que tem Kylo Ren (Adam Driver), o General Hux (Domhnall Gleeson) e o Líder Supremo Snoke (Andy Serkis) como principais expoentes. Eles conseguem capturar Poe Dameron (Oscar Isaac), um dos principais pilotos da Resistência, que antes de ser preso envia através do pequeno robô BB-8 o mapa de onde vive o mitológico Luke Skywalker (Mark Hamill)."
+                               HorizontalOptions="Center"
+                               WidthRequest="460"
+                               Margin="0,310,0,0"
+                               FontSize="12"
+                               FontFamily="Segoe UI"
+                               TextColor="Yellow"
+                               FontAttributes="Bold"
+                               ></Label>
+                        <StackLayout Grid.ColumnSpan="2" Spacing="20" Margin="0,0,0,10" Orientation ="Horizontal" HorizontalOptions="Center" VerticalOptions="End">
+                            <StackLayout Style="{StaticResource Horario}">
+                                <Label Text="10:30h" TextColor="White"></Label>
+                            </StackLayout>
+                            <StackLayout Style="{StaticResource Horario}">
+                                <Label Text="12:30h" TextColor="White"></Label>
+                            </StackLayout>
+                            <StackLayout Style="{StaticResource Horario}">
+                                <Label Text="14:30h" TextColor="White"></Label>
+                            </StackLayout>
+                            <StackLayout Style="{StaticResource Horario}">
+                                <Label Text="16:30h" TextColor="White"></Label>
+                            </StackLayout>
+                            <StackLayout Style="{StaticResource Horario}">
+                                <Label Text="18:30h" TextColor="White"></Label>
+                            </StackLayout>
+                        </StackLayout>
+
+                        <Image Grid.ColumnSpan="2" Source="Fundo.jpg" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"></Image>
+                        <StackLayout Grid.Row="1" HorizontalOptions="End" Grid.Column="0" >
+                            <Label Text="15,00" HorizontalOptions="CenterAndExpand" Style="{StaticResource SubTituloApp}" ></Label>
+                            <Label Text="MEIA" HorizontalOptions="CenterAndExpand" Style="{StaticResource TituloApp}" ></Label>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" HorizontalOptions="Start" Grid.Column="1" >
+                            <Label Text="30,00" HorizontalOptions="CenterAndExpand" Style="{StaticResource SubTituloApp}" ></Label>
+                            <Label Text="INTEIRA" HorizontalOptions="CenterAndExpand" Style="{StaticResource TituloApp}" ></Label>
+                        </StackLayout>
+
+
+                    </Grid>
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
