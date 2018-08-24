@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   xmlns:page="clr-namespace:App1_Cell.Paginas"
+             x:Class="App1_Cell.Menu.Master">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout>
+                <Button Text="TextCell" Clicked="GoPagina1"></Button>
+                <Button Text="ImagemCell" Clicked="GoPagina2"></Button>
+                <Button Text="EntryCellPage" Clicked="GoPagina3"></Button>
+                <Button Text="SwichtCellPage" Clicked="GoPagina4"></Button>
+                <Button Text="ViewCellPage" Clicked="GoPagina5"></Button>
+                <Label Text="Compenentes" FontAttributes="Bold" FontSize="Small"></Label>
+                <Button Text="ListViewPage" Clicked="GoPagina6"></Button>
+                <Button Text="ListViewButtonPage" Clicked="GoPagina7"></Button>
+
+                
+            </StackLayout>
+        </ContentPage> 
+        
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <page:TextCellPage></page:TextCellPage>
+            </x:Arguments>
+       
+        </NavigationPage>
+        
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>
