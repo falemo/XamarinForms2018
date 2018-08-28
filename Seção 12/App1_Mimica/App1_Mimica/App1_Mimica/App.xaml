@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1_Mimica.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!-- Cabecalho -->
+            <Style TargetType="StackLayout" x:Key="Cabecalho">
+                <Setter Property="BackgroundColor" Value="#F2C14E"></Setter>
+                <Setter Property="Padding" Value="10"></Setter>
+            </Style>
+            <Style TargetType="Label" x:Key="CabecalhoTitulo">
+                <Setter Property="TextColor" Value="#FFFFFF"></Setter>
+            </Style>
+            <!-- Container -->
+            <Style x:Key="Container" TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="#FAFF7F"></Setter>
+                <Setter Property="Padding" Value="10"></Setter>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"></Setter>
+
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="#F78053"></Setter>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#F78053"></Setter>
+                <Setter Property="FontSize" Value="20"></Setter>
+                <Setter Property="TextColor" Value="#FFFFFF"></Setter>
+                <Setter Property="HorizontalOptions" Value="Center"></Setter>
+            </Style>
+            <Style x:Key="ContainerEspecial" TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="#FBFFB3"></Setter>
+                <Setter Property="Padding" Value="10"></Setter>
+            </Style>
+
+            <Style TargetType="Frame">
+                <Setter Property="OutlineColor" Value="#F78053"></Setter>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"></Setter>
+                <Setter Property="Padding" Value="0"></Setter>
+            </Style>
+
+
+        </ResourceDictionary>
+        
+
+    </Application.Resources>
+</Application>
