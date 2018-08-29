@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2_SOAPClient"
+             x:Class="App2_SOAPClient.MainPage">
+
+    <StackLayout>
+        <Entry x:Name ="Numero1" Text=""></Entry>
+        <Label Text="+"></Label>
+        <Entry x:Name ="Numero2" Text=""></Entry>
+        <Button Text="Enviar ao Servidor" Clicked="EnviarSOAP"></Button>
+        <Label x:Name ="TxtResultado"></Label>
+
+    </StackLayout>
+
+</ContentPage>
